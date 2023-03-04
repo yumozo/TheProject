@@ -11,15 +11,23 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
+# Preprocessor definitions
+add_compile_definitions(TP_PLATFORM_WINDOWS)
+
 # Project
 add_executable(Sandbox
-  ${SRC_DIR}/main.cpp
+${SRC_DIR}/main.cpp
+)
+
+# Additional include directories
+target_include_directories(Sandbox PRIVATE
+  ${CMAKE_SOURCE_DIR}/TheProject/src
 )
 
 include_directories(${CMAKE_SOURCE_DIR}/TheProject) # include files from TheProject
 target_link_libraries(Sandbox
     TheProject
-)
+)                             
 
 install(TARGETS Sandbox
     RUNTIME DESTINATION bin

@@ -1,10 +1,9 @@
+#include <TheProject.h>
 
+class Sandbox : public TheProject::Application {
+   public:
+    Sandbox() {}
+    ~Sandbox() {}
+};
 
-namespace TheProject {
-__declspec( dllimport ) void Print();
-}
-
-void main() {
-    TheProject::Print();
-    //
-}
+TheProject::Application *TheProject::CreateApplication() { return new Sandbox(); }
