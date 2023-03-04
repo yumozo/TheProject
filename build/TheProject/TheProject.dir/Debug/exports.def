@@ -1,6 +1,0 @@
-EXPORTS 
-	?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA 	 DATA
-	?Print@TheProject@@YAXXZ
-	__local_stdio_printf_options
-	_vfprintf_l
-	printf
