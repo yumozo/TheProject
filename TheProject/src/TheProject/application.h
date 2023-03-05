@@ -1,6 +1,7 @@
 #pragma once
 
 #include "core.h"
+#include "Events/event.h"
 
 namespace TheProject {
 // class __declspec(dllexport) Application {

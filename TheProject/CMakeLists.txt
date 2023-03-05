@@ -29,6 +29,8 @@ add_library(TheProject SHARED
 # Additional include directories
 target_include_directories(TheProject PRIVATE
     ${spdlog_SOURCE_DIR}/include
+    ${SRC_TP_DIR}
+    ${SRC_TP_DIR}/Events
 )
 
 install(TARGETS TheProject
