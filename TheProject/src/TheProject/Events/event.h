@@ -2,9 +2,6 @@
 
 #include "../TheProject/core.h"
 
-#include <string>
-#include <functional>
-
 namespace TheProject {
 enum class EventType {
     None = 0,

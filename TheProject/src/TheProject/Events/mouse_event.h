@@ -2,8 +2,6 @@
 
 #include "event.h"
 
-#include <sstream>
-
 namespace TheProject {
 class THEPROJECT_API MouseMovedEvent : public Event {
    public:

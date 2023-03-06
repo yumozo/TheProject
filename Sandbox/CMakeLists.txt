@@ -6,7 +6,7 @@ project(sandbox)
 # Vars
 set(INC_DIR "${CMAKE_CURRENT_LIST_DIR}/include")
 set(SRC_DIR "${CMAKE_CURRENT_LIST_DIR}/src")
-
+# Settings
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
@@ -30,7 +30,7 @@ target_include_directories(Sandbox PRIVATE
 include_directories(${CMAKE_SOURCE_DIR}/TheProject)
 target_link_libraries(Sandbox
     TheProject
-)                             
+)
 
 install(TARGETS Sandbox
     RUNTIME DESTINATION bin
